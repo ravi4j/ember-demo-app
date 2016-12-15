@@ -20,6 +20,22 @@ You will need the following things properly installed on your computer.
 * `npm install`
 * `bower install`
 
+## Express and Mongoose - Server data from mongoDB
+* npm install --save-dev express 
+* npm install --save-dev mongoose
+
+* Start MongoDB demon process Windows 7
+    mongod -f C:\MongoDB\Server\3.2\mongod.cfg
+*Next we need to create a REST.adapter to load and save our data. Using the Ember CLI lets generate a new adapter ember generate adapter application. In the adapter file add the following
+* Generate Rest Adapter
+ember generate adapter application
+
+Generate Serializer for Id
+ember generate serializer application
+
+Generate Route 
+ember generate route application
+
 ## Running / Development
 
 * `ember serve`

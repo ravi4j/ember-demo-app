@@ -1,0 +1,6 @@
+db.createCollection("notes");
+db.notes.insert({
+ "title" : "Remember Me",
+ "content" : "This is important note",
+ "author" : "ravi@rs.com"
+});
