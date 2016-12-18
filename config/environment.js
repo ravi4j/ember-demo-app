@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'ember-demo-app',
     environment: environment,
     rootURL: '/',
-    locationType: 'auto',
+    locationType: 'hash',
     contentSecurityPolicy: {
       'connect-src' : "'self' http://localhost:4500"
     },
@@ -23,6 +23,7 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+      rootElement: '#layout'
     }
   };
 
